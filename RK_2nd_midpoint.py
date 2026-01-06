@@ -11,7 +11,7 @@ steps= int((xn-x0)/h)
 for i in range(steps):
    k1=f(x0,y0)
    k2=f(x0+h/2, y0+h/2*k1)
-   y1=y0+h/2*(k1+k2)
+   y1=y0+h*k2
    y0=y1
    x0=x0+h
 
